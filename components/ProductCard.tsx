@@ -25,10 +25,29 @@ export default function ProductCard({ product }: ProductCardProps) {
                 />
             </figure>
             <div className='card-body'>
-                <h2 className='card-title'>{product.name}</h2>
+                <span>
+                    <span className='card-title inline-block'>{product.name}</span>
+                    {product.variant && (
+                        <span className='badge badge-ghost badge-lg'>{product.variant}</span>
+                    )}
+                </span>
                 {isNew && <div className='badge badge-secondary'>NEW</div>}
                 <p>{product.description}</p>
-                <PriceTag price={product.price} />
+                <div className='flex justify-between gap-2'>
+                    <PriceTag price={product.price} />
+                    {product.tags.length > 0 && (
+                        <div className='text-right'>
+                            {product.tags
+                                .sort()
+                                .slice(0, 5)
+                                .map((tag, index) => (
+                                    <span key={index} className='badge badge-outline'>
+                                        {tag}
+                                    </span>
+                                ))}
+                        </div>
+                    )}
+                </div>
             </div>
         </Link>
     );
