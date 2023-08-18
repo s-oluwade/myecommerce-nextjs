@@ -21,10 +21,12 @@ export default async function SearchPage({
     where: {
       OR: [
         { name: { contains: query, mode: "insensitive" } },
+        { category: { contains: query, mode: "insensitive" } },
+        { subCategory: { contains: query, mode: "insensitive" } },
+        { tags: { has: query.toLowerCase() } },
         { description: { contains: query, mode: "insensitive" } },
       ],
     },
-    orderBy: { id: "desc" },
   });
 
   if (products.length === 0) {

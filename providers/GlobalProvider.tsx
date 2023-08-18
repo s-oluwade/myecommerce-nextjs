@@ -10,12 +10,12 @@ const initialState = {
     setProducts: () => {
         return [];
     },
-    categories: new Set<string>(),
-    setCategories: () => {
-        return new Set<string>();
-    },
     categoriesMap: new Map<string, number>(),
     setCategoriesMap: () => {
+        return new Map<string, number>();
+    },
+    subCategoriesMap: new Map<string, number>(),
+    setSubCategoriesMap: () => {
         return new Map<string, number>();
     },
 };
@@ -23,18 +23,18 @@ const initialState = {
 interface IContext {
     products: Product[] | null;
     setProducts: React.Dispatch<Product[]> | null;
-    categories: Set<string>;
-    setCategories: React.Dispatch<Set<string>>;
     categoriesMap: Map<string, number>;
     setCategoriesMap: React.Dispatch<Map<string, number>>;
+    subCategoriesMap: Map<string, number>;
+    setSubCategoriesMap: React.Dispatch<Map<string, number>>;
 }
 
 export const GlobalContext = createContext<IContext>(initialState);
 
 export default function GlobalProvider({ children }: { children: React.ReactNode }) {
     const [products, setProducts] = useState<Product[] | null>(null);
-    const [categories, setCategories] = useState<Set<string>>(new Set());
     const [categoriesMap, setCategoriesMap] = useState<Map<string, number>>(new Map());
+    const [subCategoriesMap, setSubCategoriesMap] = useState<Map<string, number>>(new Map());
 
     useEffect(() => {
         fetchProducts();
@@ -54,7 +54,17 @@ export default function GlobalProvider({ children }: { children: React.ReactNode
                         return newMap;
                     }
                 });
-                setCategories((old) => new Set([...Array.from(old), product.category]));
+                setSubCategoriesMap((old) => {
+                    const oldValue = old.get(product.subCategory);
+                    if (oldValue) {
+                        const newMap = old.set(product.subCategory, oldValue + 1);
+                        return newMap;
+                    }
+                    else {
+                        const newMap = old.set(product.subCategory, 1);
+                        return newMap;
+                    }
+                });
             });
         }
     }, [products]);
@@ -68,10 +78,10 @@ export default function GlobalProvider({ children }: { children: React.ReactNode
             value={{
                 categoriesMap,
                 setCategoriesMap,
+                subCategoriesMap,
+                setSubCategoriesMap,
                 products,
                 setProducts,
-                categories,
-                setCategories,
             }}
         >
             {children}
