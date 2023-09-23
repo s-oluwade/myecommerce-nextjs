@@ -4,9 +4,9 @@ import { prisma } from '@/lib/db/prisma';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getCategories, getSubCategories, getBrands } from '../actions';
-import { Product } from '@prisma/client';
-import PageFilter from '../PageFilter';
+import { getCategories, getSubCategories, getBrands } from './actions';
+import { Prisma, Product } from '@prisma/client';
+import PageFilter from './PageFilter';
 
 interface HomeProps {
     searchParams: {
@@ -15,21 +15,24 @@ interface HomeProps {
         subCategory: string;
         brand: string;
         sale: string;
+        sort: string;
     };
 }
 
 export default async function Home({
-    searchParams: { page = '1', category, subCategory, brand, sale },
+    searchParams: { page = '1', category, subCategory, brand, sale, sort },
 }: HomeProps) {
     const currentPage = parseInt(page);
     const pageSize = 12;
     let totalItemCount = await prisma.product.count();
+    const sortOrder = sort as Prisma.SortOrder;
 
     let products: Product[];
 
     if (category) {
         if (subCategory) {
             products = await prisma.product.findMany({
+                orderBy: { price: sortOrder },
                 where: {
                     AND: {
                         category: { equals: category },
@@ -40,6 +43,7 @@ export default async function Home({
         } else if (brand) {
             const options = brand.split(',');
             products = await prisma.product.findMany({
+                orderBy: { price: sortOrder },
                 where: {
                     AND: {
                         category: { equals: category },
@@ -49,6 +53,7 @@ export default async function Home({
             });
         } else {
             products = await prisma.product.findMany({
+                orderBy: { price: sortOrder },
                 where: {
                     category: { equals: category },
                 },
@@ -57,6 +62,7 @@ export default async function Home({
         totalItemCount = products.length;
     } else if (sale) {
         products = await prisma.product.findMany({
+            orderBy: { price: sortOrder },
             where: {
                 discountRate: { not: 0 },
             },
@@ -64,7 +70,7 @@ export default async function Home({
         totalItemCount = products.length;
     } else {
         products = await prisma.product.findMany({
-            orderBy: { name: 'asc' },
+            orderBy: { price: sortOrder },
             skip: (currentPage - 1) * pageSize,
             take: pageSize,
         });
@@ -213,14 +219,13 @@ export default async function Home({
                 <div className='flex basis-4/5 flex-col items-center'>
                     <div className='flex w-full items-center justify-between rounded-xl bg-gray-50 p-3'>
                         <div>{totalItemCount} results</div>
-                        <PageFilter />
+                        <PageFilter sale={sale} />
                     </div>
-                    <div className='my-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+                    <div className='my-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
                         {products.map((product) => (
                             <ProductCard product={product} key={product.id} />
                         ))}
                     </div>
-
                     {totalPages > 1 && (
                         <PaginationBar currentPage={currentPage} totalPages={totalPages} />
                     )}

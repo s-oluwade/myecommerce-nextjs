@@ -68,7 +68,6 @@ export async function getSubCategories(category: string) {
             }
         });
     }
-    
 
     return subCategories;
 }

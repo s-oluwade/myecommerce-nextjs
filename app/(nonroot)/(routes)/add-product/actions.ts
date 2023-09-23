@@ -3,7 +3,7 @@
 import { prisma } from '@/lib/db/prisma';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import { authOptions } from '../../api/auth/[...nextauth]/route';
+import { authOptions } from '../../../api/auth/[...nextauth]/route';
 
 export async function addProduct(formData: FormData) {
     const session = await getServerSession(authOptions);
