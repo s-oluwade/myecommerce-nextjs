@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import qs from 'query-string';
 import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 interface Props {
     category: string | undefined;
@@ -14,17 +15,23 @@ interface Props {
 
 const SideNav = ({ category, brand, categories, subCategories, brands }: Props) => {
     const router = useRouter();
+    const [currentPath, setCurrentPath] = useState();
 
-    function updateCategoryParam(categoryUpdate: string) {
-        const url = qs.stringifyUrl({
-            url: window.location.href,
-            query: {
-                onSale: categoryUpdate ? 'true' : undefined,
-            },
-        });
+    useEffect(() => {
+        console.log(window.location.href);
+        console.log('change')
+    }, [category]);
 
-        router.push(url);
-    }
+    // function updateCategoryParam(categoryUpdate: string) {
+    //     const url = qs.stringifyUrl({
+    //         url: window.location.href,
+    //         query: {
+    //             onSale: categoryUpdate ? 'true' : undefined,
+    //         },
+    //     });
+
+    //     router.push(url);
+    // }
 
     return (
         <div className='mb-16 mr-4 min-w-[200px] basis-1/5 rounded-xl bg-gray-50 py-4'>
