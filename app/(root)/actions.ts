@@ -16,7 +16,7 @@ export async function getCategories() {
     const session = await getServerSession(authOptions);
 
     if (!session) {
-        redirect('/api/auth/signin?callbackUrl=/add-product');
+        redirect('/api/auth/signin?callbackUrl=/');
     }
 
     const products = await getProducts();
@@ -38,7 +38,7 @@ export async function getSubCategories(category: string) {
     const session = await getServerSession(authOptions);
 
     if (!session) {
-        redirect('/api/auth/signin?callbackUrl=/add-product');
+        redirect('/api/auth/signin?callbackUrl=/');
     }
 
     const products = await getProducts();
@@ -76,7 +76,7 @@ export async function getBrands(category: string) {
     const session = await getServerSession(authOptions);
 
     if (!session) {
-        redirect('/api/auth/signin?callbackUrl=/add-product');
+        redirect('/api/auth/signin?callbackUrl=/');
     }
 
     const products = await getProducts();
