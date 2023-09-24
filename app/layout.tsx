@@ -8,7 +8,7 @@ import NextTopLoader from 'nextjs-toploader';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-    title: 'MyAmazon',
+    title: 'MyEcommerce',
     description: 'I will make your wallet cry',
 };
 
