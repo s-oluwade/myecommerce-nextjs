@@ -1,25 +1,38 @@
 'use client';
 
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import qs from 'query-string';
 
 interface Props {
-    sale: string;
+    onSale: string | undefined;
+    sort: string | undefined;
 }
 
-const PageFilter = ({ sale }: Props) => {
-    const [sortValue, setSortValue] = useState('best-match');
+const PageFilter = ({ onSale, sort }: Props) => {
     const router = useRouter();
-    
-    if (sortValue === 'asc') {
-        router.push('/?sort=asc')
+
+    function updateSortParam(sortUpdate: string) {
+        const url = qs.stringifyUrl({
+            url: window.location.href,
+            query: {
+                sort: sortUpdate === 'best-match' ? undefined : sortUpdate,
+            },
+        });
+
+        router.push(url);
     }
-    else if (sortValue === 'desc') {
-        router.push('/?sort=desc')
-    }
-    else {
-        router.push('/')
+
+    function updateSaleParam(saleUpdate: boolean) {
+        const url = qs.stringifyUrl(
+            {
+                url: window.location.href,
+                query: {
+                    onSale: saleUpdate ? 'true' : undefined,
+                },
+            }
+        );
+
+        router.push(url);
     }
 
     return (
@@ -27,24 +40,22 @@ const PageFilter = ({ sale }: Props) => {
             <div className='form-control'>
                 <label className='label cursor-pointer gap-2'>
                     <span className='label-text whitespace-nowrap'>On Sale</span>
-                    <Link
-                        href={`/?${!!sale && sale === 'true' ? '' : 'sale=true'}`}
-                        className='flex items-center'
-                    >
-                        <input
-                            type='checkbox'
-                            checked={!!sale && sale !== ''}
-                            className='toggle'
-                            readOnly
-                        />
-                    </Link>
+                    <input
+                        type='checkbox'
+                        checked={!!onSale && onSale !== ''}
+                        onChange={(e) => {
+                            updateSaleParam(e.target.checked);
+                        }}
+                        className='toggle'
+                        readOnly
+                    />
                 </label>
             </div>
             <span>Sort</span>
             <select
-                defaultValue='best-match'
+                defaultValue={sort ?? 'best-match'}
                 className='select select-bordered select-sm w-full max-w-xs font-normal'
-                onChange={(e) => setSortValue(e.target.value)}
+                onChange={(e) => updateSortParam(e.target.value)}
             >
                 <option value='best-match'>Best Match</option>
                 <option value='asc'>Price Low-High</option>

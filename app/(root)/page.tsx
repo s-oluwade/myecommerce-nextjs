@@ -7,20 +7,21 @@ import { notFound } from 'next/navigation';
 import { getCategories, getSubCategories, getBrands } from './actions';
 import { Prisma, Product } from '@prisma/client';
 import PageFilter from './PageFilter';
+import SideNav from './SideNav';
 
 interface HomeProps {
     searchParams: {
-        page: string;
-        category: string;
-        subCategory: string;
-        brand: string;
-        sale: string;
-        sort: string;
+        page: string | undefined;
+        category: string | undefined;
+        subCategory: string | undefined;
+        brand: string | undefined;
+        onSale: string | undefined;
+        sort: string | undefined;
     };
 }
 
 export default async function Home({
-    searchParams: { page = '1', category, subCategory, brand, sale, sort },
+    searchParams: { page = '1', category, subCategory, brand, onSale, sort },
 }: HomeProps) {
     const currentPage = parseInt(page);
     const pageSize = 12;
@@ -60,7 +61,7 @@ export default async function Home({
             });
         }
         totalItemCount = products.length;
-    } else if (sale) {
+    } else if (onSale) {
         products = await prisma.product.findMany({
             orderBy: { price: sortOrder },
             where: {
@@ -128,98 +129,11 @@ export default async function Home({
                 </div>
             )}
             <div className='flex'>
-                <div className='mb-16 mr-4 min-w-[200px] basis-1/5 rounded-xl bg-gray-50 py-4'>
-                    <div className='collapse collapse-arrow rounded-none'>
-                        <input type='checkbox' />
-                        <div className='text-md collapse-title bg-base-200 font-normal'>
-                            Categories
-                        </div>
-                        <div className='collapse-content text-sm font-light'>
-                            <Link
-                                key={0}
-                                className='link-hover link mt-4 block capitalize'
-                                href={`/`}
-                            >
-                                All Products
-                            </Link>
-                            {Array.from(categories.keys()).map((each, index) => (
-                                <Link
-                                    key={index + 1}
-                                    className='link-hover link mt-4 block capitalize'
-                                    href={`/?category=${each}`}
-                                >
-                                    {each} ({categories.get(each)})
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                    {category && (
-                        <>
-                            <div className='collapse-arrow collapse rounded-none'>
-                                <input type='checkbox' defaultChecked={!!category} />
-                                <div className='text-md collapse-title bg-base-200 font-normal'>
-                                    Sub Categories
-                                </div>
-                                <div className='collapse-content text-sm font-light'>
-                                    {Array.from(subCategories.keys()).map((each, index) => (
-                                        <Link
-                                            key={index}
-                                            className='link-hover link mt-4 block capitalize'
-                                            href={`/?category=${category}&subCategory=${each}`}
-                                        >
-                                            {each}
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className='collapse-arrow collapse rounded-none'>
-                                <input type='checkbox' defaultChecked={!!category} />
-                                <div className='text-md collapse-title bg-base-200 font-normal'>
-                                    Brands
-                                </div>
-                                <div className='collapse-content mt-2 text-sm font-light'>
-                                    <div className='form-control'>
-                                        {Array.from(brands.keys()).map((each, index) => (
-                                            <label key={index} className='label cursor-pointer'>
-                                                <Link
-                                                    key={index}
-                                                    className='link-hover link flex items-center gap-2 capitalize'
-                                                    href={`/?category=${category}&brand=${
-                                                        brand
-                                                            ? brand.split(',').includes(each)
-                                                                ? brand
-                                                                      .split(',')
-                                                                      .filter(
-                                                                          (item) => item !== each
-                                                                      )
-                                                                      .join(',')
-                                                                : brand + ',' + each
-                                                            : each
-                                                    }`}
-                                                >
-                                                    <input
-                                                        type='checkbox'
-                                                        checked={
-                                                            !!brand &&
-                                                            brand.split(',').includes(each)
-                                                        }
-                                                        className='checkbox checkbox-xs'
-                                                        readOnly
-                                                    />
-                                                    <span>{each}</span>
-                                                </Link>
-                                            </label>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </>
-                    )}
-                </div>
+                <SideNav brand={brand} category={category} subCategories={subCategories} categories={categories} brands={brands} />
                 <div className='flex basis-4/5 flex-col items-center'>
                     <div className='flex w-full items-center justify-between rounded-xl bg-gray-50 p-3'>
                         <div>{totalItemCount} results</div>
-                        <PageFilter sale={sale} />
+                        <PageFilter sort={sort} onSale={onSale} />
                     </div>
                     <div className='my-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
                         {products.map((product) => (
