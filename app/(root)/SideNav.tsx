@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import qs from 'query-string';
-import { useEffect, useState } from 'react';
 
 interface Props {
     params: {
@@ -20,24 +19,6 @@ interface Props {
 
 const SideNav = ({ params, categories, subCategories, brands }: Props) => {
     const router = useRouter();
-    const [subCategoryUrl, setSubCategoryUrl] = useState<Map<string, string>>(
-        new Map<string, string>()
-    );
-
-    useEffect(() => {
-        for (const key of subCategories.keys()) {
-            const url = qs.stringifyUrl({
-                url: window.location.href,
-                query: {
-                    ...params,
-                    subCategory: key,
-                },
-            });
-
-            subCategoryUrl.set(key, url);
-        }
-        setSubCategoryUrl(subCategoryUrl);
-    }, [params, subCategories, subCategoryUrl]);
 
     function navigateTo(
         category: string | null = null,
@@ -50,6 +31,7 @@ const SideNav = ({ params, categories, subCategories, brands }: Props) => {
                 query: {
                     ...params,
                     category,
+                    page: 1
                 },
             });
 
@@ -61,6 +43,7 @@ const SideNav = ({ params, categories, subCategories, brands }: Props) => {
                 query: {
                     ...params,
                     subCategory,
+                    page: 1
                 },
             });
 
@@ -81,7 +64,8 @@ const SideNav = ({ params, categories, subCategories, brands }: Props) => {
                 query: {
                     ...params,
                     subCategory: undefined,
-                    brand: brandUpdate === '' ? undefined : brandUpdate
+                    brand: brandUpdate === '' ? undefined : brandUpdate,
+                    page: 1
                 },
             });
             router.push(url);

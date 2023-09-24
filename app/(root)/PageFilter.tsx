@@ -28,6 +28,7 @@ const PageFilter = ({ onSale, sort }: Props) => {
                 url: window.location.href,
                 query: {
                     onSale: saleUpdate ? 'true' : undefined,
+                    page: 1
                 },
             }
         );

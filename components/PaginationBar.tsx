@@ -1,51 +1,63 @@
-import Link from "next/link";
+'use client';
+
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import qs from 'query-string';
 
 interface PaginationBarProps {
-  currentPage: number;
-  totalPages: number;
+    currentPage: number;
+    totalPages: number;
 }
 
-export default function PaginationBar({
-  currentPage,
-  totalPages,
-}: PaginationBarProps) {
-  const maxPage = Math.min(totalPages, Math.max(currentPage + 4, 10));
-  const minPage = Math.max(1, Math.min(currentPage - 5, maxPage - 9));
+export default function PaginationBar({ currentPage, totalPages }: PaginationBarProps) {
+    const router = useRouter();
 
-  const numberedPageItems: JSX.Element[] = [];
+    const maxPage = Math.min(totalPages, Math.max(currentPage + 4, 10));
+    const minPage = Math.max(1, Math.min(currentPage - 5, maxPage - 9));
 
-  for (let page = minPage; page <= maxPage; page++) {
-    numberedPageItems.push(
-      <Link
-        href={"?page=" + page}
-        key={page}
-        className={`join-item btn ${
-          currentPage === page ? "btn-active pointer-events-none" : ""
-        }`}
-      >
-        {page}
-      </Link>
+    const numberedPageItems: JSX.Element[] = [];
+
+    for (let page = minPage; page <= maxPage; page++) {
+        numberedPageItems.push(
+            <a
+            onClick={() => navigateTo(page)}
+                key={page}
+                className={`btn join-item ${
+                    currentPage === page ? 'btn-active pointer-events-none' : ''
+                }`}
+            >
+                {page}
+            </a>
+        );
+    }
+
+    const navigateTo = (page: number | undefined = undefined) => {
+        const url = qs.stringifyUrl({
+            url: window.location.href,
+            query: {
+                page,
+            },
+        });
+
+        router.push(url);
+    };
+
+    return (
+        <>
+            <div className='join hidden sm:block'>{numberedPageItems}</div>
+            <div className='join block sm:hidden'>
+                {currentPage > 1 && (
+                    <a onClick={() => navigateTo(currentPage - 1)} className='btn join-item'>
+                        «
+                    </a>
+                )}
+                <button className='btn join-item pointer-events-none'>Page {currentPage}</button>
+                {currentPage < totalPages && (
+                    <a onClick={() => navigateTo(currentPage + 1)} className='btn join-item'>
+                        »
+                    </a>
+                )}
+            </div>
+        </>
     );
-  }
-
-  return (
-    <>
-      <div className="join hidden sm:block">{numberedPageItems}</div>
-      <div className="join block sm:hidden">
-        {currentPage > 1 && (
-          <Link href={"?page=" + (currentPage - 1)} className="join-item btn">
-            «
-          </Link>
-        )}
-        <button className="join-item btn pointer-events-none">
-          Page {currentPage}
-        </button>
-        {currentPage < totalPages && (
-          <Link href={"?page=" + (currentPage + 1)} className="join-item btn">
-            »
-          </Link>
-        )}
-      </div>
-    </>
-  );
 }

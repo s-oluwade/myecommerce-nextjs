@@ -44,6 +44,14 @@ export default async function Home({
         });
         totalItemCount = products.length;
     } else {
+        const all = await prisma.product.findMany({
+            orderBy: { price: sortOrder },
+            where: {
+                discountRate: onSale ? { not: 0 } : {},
+            },
+        });
+        totalItemCount = all.length;
+
         products = await prisma.product.findMany({
             orderBy: { price: sortOrder },
             skip: (currentPage - 1) * pageSize,
