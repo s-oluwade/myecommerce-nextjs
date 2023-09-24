@@ -8,8 +8,8 @@ import NextTopLoader from 'nextjs-toploader';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-    title: 'Flowmazon',
-    description: 'We make your wallet cry',
+    title: 'MyAmazon',
+    description: 'I will make your wallet cry',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
