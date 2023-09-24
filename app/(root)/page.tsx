@@ -34,10 +34,28 @@ export default async function Home({
         if (subCategory) {
             products = await prisma.product.findMany({
                 orderBy: { price: sortOrder },
+                skip: (currentPage - 1) * pageSize,
+                take: pageSize,
                 where: {
                     AND: {
                         category: { equals: category },
                         subCategory: { equals: subCategory },
+                        discountRate: onSale ? { not: 0 } : {},
+                    },
+                },
+            });
+        } else if (subCategory && brand) {
+            const options = brand.split(',');
+            products = await prisma.product.findMany({
+                orderBy: { price: sortOrder },
+                skip: (currentPage - 1) * pageSize,
+                take: pageSize,
+                where: {
+                    AND: {
+                        category: { equals: category },
+                        subCategory: { equals: subCategory },
+                        brand: { in: options },
+                        discountRate: onSale ? { not: 0 } : {},
                     },
                 },
             });
@@ -45,36 +63,38 @@ export default async function Home({
             const options = brand.split(',');
             products = await prisma.product.findMany({
                 orderBy: { price: sortOrder },
+                skip: (currentPage - 1) * pageSize,
+                take: pageSize,
                 where: {
                     AND: {
                         category: { equals: category },
                         brand: { in: options },
+                        discountRate: onSale ? { not: 0 } : {},
                     },
                 },
             });
         } else {
             products = await prisma.product.findMany({
                 orderBy: { price: sortOrder },
+                skip: (currentPage - 1) * pageSize,
+                take: pageSize,
                 where: {
                     category: { equals: category },
+                    discountRate: onSale ? { not: 0 } : {},
                 },
             });
         }
-        totalItemCount = products.length;
-    } else if (onSale) {
-        products = await prisma.product.findMany({
-            orderBy: { price: sortOrder },
-            where: {
-                discountRate: { not: 0 },
-            },
-        });
         totalItemCount = products.length;
     } else {
         products = await prisma.product.findMany({
             orderBy: { price: sortOrder },
             skip: (currentPage - 1) * pageSize,
             take: pageSize,
+            where: {
+                discountRate: onSale ? { not: 0 } : {},
+            },
         });
+        totalItemCount = products.length;
     }
 
     const totalPages = Math.ceil(totalItemCount / pageSize);
@@ -129,7 +149,12 @@ export default async function Home({
                 </div>
             )}
             <div className='flex'>
-                <SideNav brand={brand} category={category} subCategories={subCategories} categories={categories} brands={brands} />
+                <SideNav
+                    params={{ brand, category, subCategory, onSale, sort }}
+                    subCategories={subCategories}
+                    categories={categories}
+                    brands={brands}
+                />
                 <div className='flex basis-4/5 flex-col items-center'>
                     <div className='flex w-full items-center justify-between rounded-xl bg-gray-50 p-3'>
                         <div>{totalItemCount} results</div>
