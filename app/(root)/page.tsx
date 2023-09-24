@@ -42,6 +42,7 @@ export default async function Home({
                 },
             },
         });
+        totalItemCount = products.length;
     } else {
         products = await prisma.product.findMany({
             orderBy: { price: sortOrder },
@@ -55,7 +56,7 @@ export default async function Home({
     const totalPages = Math.ceil(totalItemCount / pageSize);
     const randomlyChosenItemNumber = 1;
 
-    if (parseInt(page) > totalPages || parseInt(page) < 1) {
+    if (parseInt(page) > totalPages && parseInt(page) !== 1) {
         notFound();
     }
 
@@ -103,7 +104,7 @@ export default async function Home({
                     </div>
                 </div>
             )}
-            <div className='flex'>
+            <div className='flex w-full'>
                 <SideNav
                     params={{ brand, category, subCategory, onSale, sort }}
                     subCategories={subCategories}

@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import qs from 'query-string';
 import { useRouter } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
+import qs from 'query-string';
+import { useEffect, useState } from 'react';
 
 interface Props {
     params: {
@@ -25,7 +25,7 @@ const SideNav = ({ params, categories, subCategories, brands }: Props) => {
     );
 
     useEffect(() => {
-        for (const [key, value] of subCategories.entries()) {
+        for (const key of subCategories.keys()) {
             const url = qs.stringifyUrl({
                 url: window.location.href,
                 query: {
@@ -38,15 +38,6 @@ const SideNav = ({ params, categories, subCategories, brands }: Props) => {
         }
         setSubCategoryUrl(subCategoryUrl);
     }, [params, subCategories, subCategoryUrl]);
-
-    //     const url = qs.stringifyUrl({
-    //         url: window.location.href,
-    //         query: {
-    //             onSale: categoryUpdate ? 'true' : undefined,
-    //         },
-    //     });
-    //     router.push(url);
-    // }
 
     function navigateTo(
         category: string | null = null,
