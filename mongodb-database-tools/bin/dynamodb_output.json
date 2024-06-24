@@ -1,0 +1,1397 @@
+[
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc63d652b20f4752a6e2af"
+                }
+            }
+        },
+        "name": {
+            "S": "Apple Watch SE (2nd Gen) [GPS 40mm]"
+        },
+        "description": {
+            "S": "All the essentials to help you monitor your fitness, keep connected, track your health and stay safe. Now up to 20 percent faster, with features like Crash Detection and enhanced workout metrics, it\u2019s a better value than ever."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/71ZrrxHNQML._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "32900"
+        },
+        "color": {
+            "S": "light beige"
+        },
+        "category": {
+            "S": "watches"
+        },
+        "subCategory": {
+            "S": "smartwatch"
+        },
+        "brand": {
+            "S": "Apple"
+        },
+        "variant": {
+            "S": "se"
+        },
+        "discountRate": {
+            "N": "25"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T05:51:18.685Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T05:51:18.685Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc6c5357cc8abcc77c02fd"
+                }
+            }
+        },
+        "name": {
+            "S": "Fossil Machine Gen 6 Hybrid 45mm Stainless Steel"
+        },
+        "description": {
+            "S": "Gen 6 Hybrid Smartwatches are compatible with phones running the latest version of Android or iOS. Improved power, more reliable connection and up to 4x range with Bluetooth 5."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/71393U576XL._AC_UX522_.jpg"
+        },
+        "price": {
+            "N": "33987"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "watches"
+        },
+        "subCategory": {
+            "S": "hybrid"
+        },
+        "brand": {
+            "S": "Fossil"
+        },
+        "variant": {
+            "S": "machine"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T06:27:31.28Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T06:27:31.28Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc6e0e57cc8abcc77c02fe"
+                }
+            }
+        },
+        "name": {
+            "S": "Tissot Mens T-Race Cycling 316L Stainless Steel "
+        },
+        "description": {
+            "S": "Quartz movement, 316L stainless steel case with black PVD coating, Index + Arabic dial type, Date"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/61tdbxHKyXL._AC_UY741_.jpg"
+        },
+        "price": {
+            "N": "39366"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "watches"
+        },
+        "subCategory": {
+            "S": "analog"
+        },
+        "brand": {
+            "S": "Tissot"
+        },
+        "variant": {
+            "S": "t-race"
+        },
+        "discountRate": {
+            "N": "50"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T06:34:54.072Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T06:34:54.072Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc6e80423d11f4985ef566"
+                }
+            }
+        },
+        "name": {
+            "S": "Acer Chromebook Spin 311 Convertible Laptop"
+        },
+        "description": {
+            "S": "Chromebook runs on Chrome OS - An operating system by Google that is built for the way we live today. It comes with built-in virus protection, updates automatically, boots up in seconds and continues to stay fast over time. (Internet connection is required)."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/71c5W9NxN5L._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "36999"
+        },
+        "color": {
+            "S": "silver"
+        },
+        "category": {
+            "S": "laptops"
+        },
+        "subCategory": {
+            "S": "2-in-1"
+        },
+        "brand": {
+            "S": "Acer"
+        },
+        "variant": {
+            "S": "spin 311"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T06:36:48.748Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T06:36:48.748Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc761bcee4ecc0d4e3e39e"
+                }
+            }
+        },
+        "name": {
+            "S": "Corsair Voyager a1600 Gaming Laptop"
+        },
+        "description": {
+            "S": "AMD Advantage: Combines the latest 8-core/16-thread AMD Ryzen 6000-Series processor, AMD Radeon RX 6000-Series graphics (with Integrated MUX switch), and exclusive AMD Smart Technologies for an impressively powerful laptop that leverages the best of what AMD has to offer."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/81amhhkXBUL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "193732"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "laptops"
+        },
+        "subCategory": {
+            "S": "gaming"
+        },
+        "brand": {
+            "S": "Corsair"
+        },
+        "variant": {
+            "S": "voyager a1600"
+        },
+        "discountRate": {
+            "N": "15"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:09:15.061Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:09:15.061Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7666cee4ecc0d4e3e39f"
+                }
+            }
+        },
+        "name": {
+            "S": "Microsoft Surface Laptop Go 12.4-in Touchscreen Intel i5"
+        },
+        "description": {
+            "S": "Sleek design and standout value. At just 2.44 lbs, it\u2019s light, portable, and easy to keep by your side throughout the day."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/61dYGR1Y62L._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "93694"
+        },
+        "color": {
+            "S": "blue"
+        },
+        "category": {
+            "S": "laptops"
+        },
+        "subCategory": {
+            "S": "ultrabook"
+        },
+        "brand": {
+            "S": "Microsoft"
+        },
+        "variant": {
+            "S": "surface laptop go"
+        },
+        "discountRate": {
+            "N": "50"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:10:30.485Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:10:30.485Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc76ebcee4ecc0d4e3e3a0"
+                }
+            }
+        },
+        "name": {
+            "S": "DELL Custom Built OptiPlex Computer Desktop "
+        },
+        "description": {
+            "S": "This pre-owned product has been professionally inspected, tested and cleaned by Amazon-qualified suppliers."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/71cY0Y6EckL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "25899"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "Desktops"
+        },
+        "subCategory": {
+            "S": "gaming"
+        },
+        "brand": {
+            "S": "Dell"
+        },
+        "variant": {
+            "S": "optiplex"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:12:43.673Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:12:43.673Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc773ecee4ecc0d4e3e3a1"
+                }
+            }
+        },
+        "name": {
+            "S": "Microsoft Arc Mouse: sleek, ergonomic design"
+        },
+        "description": {
+            "S": "Ultra-slim and lightweight; Wireless frequency: 2.4 GHz frequency range\r\nSnaps Flat and slips easily into a pocket or bag."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/41AfnXpTERL._AC_SL1200_.jpg"
+        },
+        "price": {
+            "N": "6998"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "computer accessories"
+        },
+        "subCategory": {
+            "S": "mouse"
+        },
+        "brand": {
+            "S": "Microsoft"
+        },
+        "variant": {
+            "S": "ergonomic"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:14:06.702Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:14:06.702Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc77e8cee4ecc0d4e3e3a2"
+                }
+            }
+        },
+        "name": {
+            "S": "Logitech MX Keys S Wireless Keyboard"
+        },
+        "description": {
+            "S": "Fluid Typing Experience: Laptop-like profile with spherically-dished keys shaped for your fingertips delivers a fast, fluid, precise and quieter typing experience"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/71skZeAyPuL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "14999"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "computer accessories"
+        },
+        "subCategory": {
+            "S": "keyboard"
+        },
+        "brand": {
+            "S": "Logitech"
+        },
+        "variant": {
+            "S": "wireless"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:16:56.452Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:16:56.452Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc78a7cee4ecc0d4e3e3a3"
+                }
+            }
+        },
+        "name": {
+            "S": "Logitech POP Mouse, Wireless Mouse with Customizable Emojis"
+        },
+        "description": {
+            "S": "Logitech POP Mouse, Wireless Mouse with Customizable Emojis, SilentTouch Technology, Precision/Speed Scroll, Compact Design, Bluetooth, Multi-Device, OS Compatible"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/51zBxgfnZkL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "4498"
+        },
+        "color": {
+            "S": "purple"
+        },
+        "category": {
+            "S": "computer accessories"
+        },
+        "subCategory": {
+            "S": "mouse"
+        },
+        "brand": {
+            "S": "Logitech"
+        },
+        "variant": {
+            "S": "wireless"
+        },
+        "discountRate": {
+            "N": "10"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:20:07.146Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:20:07.146Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc794fcee4ecc0d4e3e3a4"
+                }
+            }
+        },
+        "name": {
+            "S": "Sound Bar, Sound Bar with Dual Built-in Subwoofer"
+        },
+        "description": {
+            "S": "2X BUILT-IN SUBWOOFER FOR IMMERSIVE EXPERIENCE - Our newest Soundbar with dual 25W built-in subwoofer and 4 speakers deliver room-shaking powerful bass and precise audio and cinematic surround sound. to your living room, with 90W of power, Vmai sound bar contributes to intense low frequencies and 110dB of clear sound. Vmai sound bars for tv complete your home entertainment with an incredible home theater sound experience."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/51b-AKFTpPL._AC_SL1015_.jpg"
+        },
+        "price": {
+            "N": "13999"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "headphones and speakers"
+        },
+        "subCategory": {
+            "S": "soundbar"
+        },
+        "brand": {
+            "S": "VMAI"
+        },
+        "variant": {
+            "S": "2.1"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:22:55.909Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:22:55.909Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7997cee4ecc0d4e3e3a5"
+                }
+            }
+        },
+        "name": {
+            "S": "TAGRY Bluetooth Headphones 60H Playback"
+        },
+        "description": {
+            "S": "60H Playback and LED Power Display: Dual digital LED power display outside of the case is to show the power level for charging case and earbuds. When charging for the case, the LED light will start to flash from 1 to 100. When you put earbuds into the case, then earbuds will start to be charged. 470mAh battery capacity charging case can provide 6 times full charging for both earbuds, each earbud can last 5H on single charging. So, you can enjoy 60H music time in total via using in turn."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/61auSUFV21L._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "6899"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "headphones and speakers"
+        },
+        "subCategory": {
+            "S": "earbuds"
+        },
+        "brand": {
+            "S": "Tagry"
+        },
+        "variant": {
+            "S": ""
+        },
+        "discountRate": {
+            "N": "28"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:24:07.846Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:24:07.846Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7a15cee4ecc0d4e3e3a6"
+                }
+            }
+        },
+        "name": {
+            "S": "Bose QuietComFort 45 Bluetooth Wireless"
+        },
+        "description": {
+            "S": "Noise cancelling wireless headphones: the perfect balance of quiet, comfort and sound bose uses tiny mics to measure, compare and react to outside noise, cancelling it with opposite signals"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/51JbsHSktkL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "38900"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "headphones and speakers"
+        },
+        "subCategory": {
+            "S": "headphones"
+        },
+        "brand": {
+            "S": "Bose"
+        },
+        "variant": {
+            "S": "QuietComfort 45"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:26:13.314Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:26:13.314Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7de9cee4ecc0d4e3e3a7"
+                }
+            }
+        },
+        "name": {
+            "S": "Samsung Galaxy Tab S6 Lite (New) Blue"
+        },
+        "description": {
+            "S": "Take this sleek, lightweight tablet anywhere; Its slim design slips easily into your bag and it comes in your choice of three stylish colors \u2014 Chiffon Pink, Angora Blue, and Oxford Gray"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/61EobGaoeaL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "8999"
+        },
+        "color": {
+            "S": "blue"
+        },
+        "category": {
+            "S": "cellphones and tablets"
+        },
+        "subCategory": {
+            "S": "tablets"
+        },
+        "brand": {
+            "S": "Samsung"
+        },
+        "variant": {
+            "S": ""
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:42:33.487Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:42:33.487Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7e25cee4ecc0d4e3e3a8"
+                }
+            }
+        },
+        "name": {
+            "S": "Motorola Moto E (2020) 32GB "
+        },
+        "description": {
+            "S": "This pre-owned product has been professionally inspected, tested and cleaned by Amazon-qualified suppliers."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/61jAkvdZikL._AC_SL1260_.jpg"
+        },
+        "price": {
+            "N": "14999"
+        },
+        "color": {
+            "S": "blue"
+        },
+        "category": {
+            "S": "cellphones and tablets"
+        },
+        "subCategory": {
+            "S": "smartphone"
+        },
+        "brand": {
+            "S": "Motorola"
+        },
+        "variant": {
+            "S": ""
+        },
+        "discountRate": {
+            "N": "33"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:43:33.379Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:43:33.379Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7e81cee4ecc0d4e3e3a9"
+                }
+            }
+        },
+        "name": {
+            "S": "Enhanced Wired Controller for Xbox Series X|S"
+        },
+        "description": {
+            "S": "Thousands of color combinations with hundreds of vivid colors and three distinct Spectra zones, two led modes: select either \u201cbreathing\u201d or \u201csolid\u201d modes"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/71XhN3d9GoL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "4996"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "video game accessories"
+        },
+        "subCategory": {
+            "S": "wired controller"
+        },
+        "brand": {
+            "S": "Xbox"
+        },
+        "variant": {
+            "S": "PowerA Spectra Infinity"
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:45:05.561Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:45:05.561Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7eadcee4ecc0d4e3e3aa"
+                }
+            }
+        },
+        "name": {
+            "S": "Xbox Wireless Controller for Xbox Series X|S"
+        },
+        "description": {
+            "S": "Experience the modernized design of the Xbox Wireless Controller \u2013 pulse Red, featuring Sculpted surfaces and refined geometry for enhanced comfort and effortless control during gameplay"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/61P9Y9Oo+lL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "7499"
+        },
+        "color": {
+            "S": "red"
+        },
+        "category": {
+            "S": "video game accessories"
+        },
+        "subCategory": {
+            "S": "wireless controller"
+        },
+        "brand": {
+            "S": "Xbox"
+        },
+        "variant": {
+            "S": ""
+        },
+        "discountRate": {
+            "N": "20"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:45:49.827Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:45:49.827Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7ef5cee4ecc0d4e3e3ab"
+                }
+            }
+        },
+        "name": {
+            "S": "Razer Wolverine V2 Wired Gaming Controller for Xbox Series Xs"
+        },
+        "description": {
+            "S": "Designed for greater control and precision: the controller\u2019s ergonomics provide a natural grip that ensures agile and accurate button interaction, while the contoured design and non-slip rubber grips allow all-day gaming at peak performance"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/815N9CYHr6L._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "13999"
+        },
+        "color": {
+            "S": "black"
+        },
+        "category": {
+            "S": "video game accessories"
+        },
+        "subCategory": {
+            "S": "wired controller"
+        },
+        "brand": {
+            "S": "Xbox"
+        },
+        "variant": {
+            "S": "razer wolverine v2"
+        },
+        "discountRate": {
+            "N": "37"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": ""
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:47:01.934Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:47:01.934Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7f6ecee4ecc0d4e3e3ac"
+                }
+            }
+        },
+        "name": {
+            "S": "AceGamer Wireless Controller for PS4"
+        },
+        "description": {
+            "S": "It's compatible with PS4/Pro/Slim/Windows PC. When you are connecting it to console for the first time, you need to use the charge cable in the package."
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/71vGA8dRecL._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "2999"
+        },
+        "color": {
+            "S": "purple"
+        },
+        "category": {
+            "S": "video game accessories"
+        },
+        "subCategory": {
+            "S": "wireless controller"
+        },
+        "brand": {
+            "S": "AceGamer"
+        },
+        "variant": {
+            "S": ""
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": "PlayStation"
+                },
+                {
+                    "S": "playstation"
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:49:02.607Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:49:02.607Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7fb2cee4ecc0d4e3e3ad"
+                }
+            }
+        },
+        "name": {
+            "S": "Game Controller for PS4, Wireless Remote"
+        },
+        "description": {
+            "S": "Game Controller for PS4, Wireless Remote for Play 4 with Dual Vibration Game Joystick"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/61FH4aOS+FL._AC_SL1495_.jpg"
+        },
+        "price": {
+            "N": "3199"
+        },
+        "color": {
+            "S": "blue"
+        },
+        "category": {
+            "S": "video game accessories"
+        },
+        "subCategory": {
+            "S": "wireless controller"
+        },
+        "brand": {
+            "S": "Burcica"
+        },
+        "variant": {
+            "S": ""
+        },
+        "discountRate": {
+            "N": "13"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": "PlayStation"
+                },
+                {
+                    "S": "playstation"
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:50:10.541Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:50:10.541Z"
+                }
+            }
+        }
+    },
+    {
+        "_id": {
+            "M": {
+                "$oid": {
+                    "S": "64dc7ff0cee4ecc0d4e3e3ae"
+                }
+            }
+        },
+        "name": {
+            "S": "AceGamer [Upgraded] Wireless Controller for PS4"
+        },
+        "description": {
+            "S": "This wireless controller is compatible with PS4/Slim/Pro/PC (Windows 7/8.1/10). It can be used as a wired controller by connecting it to a computer with a USB cable. It also applies to the latest system software version.(Please activate device with USB cable for the first match connection.)"
+        },
+        "imageUrl": {
+            "S": "https://m.media-amazon.com/images/I/7156vvzpI-L._AC_SL1500_.jpg"
+        },
+        "price": {
+            "N": "2999"
+        },
+        "color": {
+            "S": "camo grey"
+        },
+        "category": {
+            "S": "video game accessories"
+        },
+        "subCategory": {
+            "S": "wireless controller"
+        },
+        "brand": {
+            "S": "AceGamer"
+        },
+        "variant": {
+            "S": ""
+        },
+        "discountRate": {
+            "N": "0"
+        },
+        "stock": {
+            "N": "30"
+        },
+        "ratings": {
+            "N": "0"
+        },
+        "tags": {
+            "L": [
+                {
+                    "S": "PlayStation"
+                },
+                {
+                    "S": "playstation"
+                }
+            ]
+        },
+        "createdAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:51:12.644Z"
+                }
+            }
+        },
+        "updatedAt": {
+            "M": {
+                "$date": {
+                    "S": "2023-08-16T07:51:12.644Z"
+                }
+            }
+        }
+    }
+]

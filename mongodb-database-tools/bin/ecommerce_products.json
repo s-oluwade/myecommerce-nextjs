@@ -1,0 +1,551 @@
+[
+    {
+        "_id": {
+            "$oid": "64dc63d652b20f4752a6e2af"
+        },
+        "name": "Apple Watch SE (2nd Gen) [GPS 40mm]",
+        "description": "All the essentials to help you monitor your fitness, keep connected, track your health and stay safe. Now up to 20 percent faster, with features like Crash Detection and enhanced workout metrics, it’s a better value than ever.",
+        "imageUrl": "https://m.media-amazon.com/images/I/71ZrrxHNQML._AC_SL1500_.jpg",
+        "price": 32900,
+        "color": "light beige",
+        "category": "watches",
+        "subCategory": "smartwatch",
+        "brand": "Apple",
+        "variant": "se",
+        "discountRate": 25,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T05:51:18.685Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T05:51:18.685Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc6c5357cc8abcc77c02fd"
+        },
+        "name": "Fossil Machine Gen 6 Hybrid 45mm Stainless Steel",
+        "description": "Gen 6 Hybrid Smartwatches are compatible with phones running the latest version of Android or iOS. Improved power, more reliable connection and up to 4x range with Bluetooth 5.",
+        "imageUrl": "https://m.media-amazon.com/images/I/71393U576XL._AC_UX522_.jpg",
+        "price": 33987,
+        "color": "black",
+        "category": "watches",
+        "subCategory": "hybrid",
+        "brand": "Fossil",
+        "variant": "machine",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T06:27:31.28Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T06:27:31.28Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc6e0e57cc8abcc77c02fe"
+        },
+        "name": "Tissot Mens T-Race Cycling 316L Stainless Steel ",
+        "description": "Quartz movement, 316L stainless steel case with black PVD coating, Index + Arabic dial type, Date",
+        "imageUrl": "https://m.media-amazon.com/images/I/61tdbxHKyXL._AC_UY741_.jpg",
+        "price": 39366,
+        "color": "black",
+        "category": "watches",
+        "subCategory": "analog",
+        "brand": "Tissot",
+        "variant": "t-race",
+        "discountRate": 50,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T06:34:54.072Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T06:34:54.072Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc6e80423d11f4985ef566"
+        },
+        "name": "Acer Chromebook Spin 311 Convertible Laptop",
+        "description": "Chromebook runs on Chrome OS - An operating system by Google that is built for the way we live today. It comes with built-in virus protection, updates automatically, boots up in seconds and continues to stay fast over time. (Internet connection is required).",
+        "imageUrl": "https://m.media-amazon.com/images/I/71c5W9NxN5L._AC_SL1500_.jpg",
+        "price": 36999,
+        "color": "silver",
+        "category": "laptops",
+        "subCategory": "2-in-1",
+        "brand": "Acer",
+        "variant": "spin 311",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T06:36:48.748Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T06:36:48.748Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc761bcee4ecc0d4e3e39e"
+        },
+        "name": "Corsair Voyager a1600 Gaming Laptop",
+        "description": "AMD Advantage: Combines the latest 8-core/16-thread AMD Ryzen 6000-Series processor, AMD Radeon RX 6000-Series graphics (with Integrated MUX switch), and exclusive AMD Smart Technologies for an impressively powerful laptop that leverages the best of what AMD has to offer.",
+        "imageUrl": "https://m.media-amazon.com/images/I/81amhhkXBUL._AC_SL1500_.jpg",
+        "price": 193732,
+        "color": "black",
+        "category": "laptops",
+        "subCategory": "gaming",
+        "brand": "Corsair",
+        "variant": "voyager a1600",
+        "discountRate": 15,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:09:15.061Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:09:15.061Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7666cee4ecc0d4e3e39f"
+        },
+        "name": "Microsoft Surface Laptop Go 12.4-in Touchscreen Intel i5",
+        "description": "Sleek design and standout value. At just 2.44 lbs, it’s light, portable, and easy to keep by your side throughout the day.",
+        "imageUrl": "https://m.media-amazon.com/images/I/61dYGR1Y62L._AC_SL1500_.jpg",
+        "price": 93694,
+        "color": "blue",
+        "category": "laptops",
+        "subCategory": "ultrabook",
+        "brand": "Microsoft",
+        "variant": "surface laptop go",
+        "discountRate": 50,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:10:30.485Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:10:30.485Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc76ebcee4ecc0d4e3e3a0"
+        },
+        "name": "DELL Custom Built OptiPlex Computer Desktop ",
+        "description": "This pre-owned product has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+        "imageUrl": "https://m.media-amazon.com/images/I/71cY0Y6EckL._AC_SL1500_.jpg",
+        "price": 25899,
+        "color": "black",
+        "category": "Desktops",
+        "subCategory": "gaming",
+        "brand": "Dell",
+        "variant": "optiplex",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:12:43.673Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:12:43.673Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc773ecee4ecc0d4e3e3a1"
+        },
+        "name": "Microsoft Arc Mouse: sleek, ergonomic design",
+        "description": "Ultra-slim and lightweight; Wireless frequency: 2.4 GHz frequency range\r\nSnaps Flat and slips easily into a pocket or bag.",
+        "imageUrl": "https://m.media-amazon.com/images/I/41AfnXpTERL._AC_SL1200_.jpg",
+        "price": 6998,
+        "color": "black",
+        "category": "computer accessories",
+        "subCategory": "mouse",
+        "brand": "Microsoft",
+        "variant": "ergonomic",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:14:06.702Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:14:06.702Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc77e8cee4ecc0d4e3e3a2"
+        },
+        "name": "Logitech MX Keys S Wireless Keyboard",
+        "description": "Fluid Typing Experience: Laptop-like profile with spherically-dished keys shaped for your fingertips delivers a fast, fluid, precise and quieter typing experience",
+        "imageUrl": "https://m.media-amazon.com/images/I/71skZeAyPuL._AC_SL1500_.jpg",
+        "price": 14999,
+        "color": "black",
+        "category": "computer accessories",
+        "subCategory": "keyboard",
+        "brand": "Logitech",
+        "variant": "wireless",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:16:56.452Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:16:56.452Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc78a7cee4ecc0d4e3e3a3"
+        },
+        "name": "Logitech POP Mouse, Wireless Mouse with Customizable Emojis",
+        "description": "Logitech POP Mouse, Wireless Mouse with Customizable Emojis, SilentTouch Technology, Precision/Speed Scroll, Compact Design, Bluetooth, Multi-Device, OS Compatible",
+        "imageUrl": "https://m.media-amazon.com/images/I/51zBxgfnZkL._AC_SL1500_.jpg",
+        "price": 4498,
+        "color": "purple",
+        "category": "computer accessories",
+        "subCategory": "mouse",
+        "brand": "Logitech",
+        "variant": "wireless",
+        "discountRate": 10,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:20:07.146Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:20:07.146Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc794fcee4ecc0d4e3e3a4"
+        },
+        "name": "Sound Bar, Sound Bar with Dual Built-in Subwoofer",
+        "description": "2X BUILT-IN SUBWOOFER FOR IMMERSIVE EXPERIENCE - Our newest Soundbar with dual 25W built-in subwoofer and 4 speakers deliver room-shaking powerful bass and precise audio and cinematic surround sound. to your living room, with 90W of power, Vmai sound bar contributes to intense low frequencies and 110dB of clear sound. Vmai sound bars for tv complete your home entertainment with an incredible home theater sound experience.",
+        "imageUrl": "https://m.media-amazon.com/images/I/51b-AKFTpPL._AC_SL1015_.jpg",
+        "price": 13999,
+        "color": "black",
+        "category": "headphones and speakers",
+        "subCategory": "soundbar",
+        "brand": "VMAI",
+        "variant": "2.1",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:22:55.909Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:22:55.909Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7997cee4ecc0d4e3e3a5"
+        },
+        "name": "TAGRY Bluetooth Headphones 60H Playback",
+        "description": "60H Playback and LED Power Display: Dual digital LED power display outside of the case is to show the power level for charging case and earbuds. When charging for the case, the LED light will start to flash from 1 to 100. When you put earbuds into the case, then earbuds will start to be charged. 470mAh battery capacity charging case can provide 6 times full charging for both earbuds, each earbud can last 5H on single charging. So, you can enjoy 60H music time in total via using in turn.",
+        "imageUrl": "https://m.media-amazon.com/images/I/61auSUFV21L._AC_SL1500_.jpg",
+        "price": 6899,
+        "color": "black",
+        "category": "headphones and speakers",
+        "subCategory": "earbuds",
+        "brand": "Tagry",
+        "variant": "",
+        "discountRate": 28,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:24:07.846Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:24:07.846Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7a15cee4ecc0d4e3e3a6"
+        },
+        "name": "Bose QuietComFort 45 Bluetooth Wireless",
+        "description": "Noise cancelling wireless headphones: the perfect balance of quiet, comfort and sound bose uses tiny mics to measure, compare and react to outside noise, cancelling it with opposite signals",
+        "imageUrl": "https://m.media-amazon.com/images/I/51JbsHSktkL._AC_SL1500_.jpg",
+        "price": 38900,
+        "color": "black",
+        "category": "headphones and speakers",
+        "subCategory": "headphones",
+        "brand": "Bose",
+        "variant": "QuietComfort 45",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:26:13.314Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:26:13.314Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7de9cee4ecc0d4e3e3a7"
+        },
+        "name": "Samsung Galaxy Tab S6 Lite (New) Blue",
+        "description": "Take this sleek, lightweight tablet anywhere; Its slim design slips easily into your bag and it comes in your choice of three stylish colors — Chiffon Pink, Angora Blue, and Oxford Gray",
+        "imageUrl": "https://m.media-amazon.com/images/I/61EobGaoeaL._AC_SL1500_.jpg",
+        "price": 8999,
+        "color": "blue",
+        "category": "cellphones and tablets",
+        "subCategory": "tablets",
+        "brand": "Samsung",
+        "variant": "",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:42:33.487Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:42:33.487Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7e25cee4ecc0d4e3e3a8"
+        },
+        "name": "Motorola Moto E (2020) 32GB ",
+        "description": "This pre-owned product has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+        "imageUrl": "https://m.media-amazon.com/images/I/61jAkvdZikL._AC_SL1260_.jpg",
+        "price": 14999,
+        "color": "blue",
+        "category": "cellphones and tablets",
+        "subCategory": "smartphone",
+        "brand": "Motorola",
+        "variant": "",
+        "discountRate": 33,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:43:33.379Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:43:33.379Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7e81cee4ecc0d4e3e3a9"
+        },
+        "name": "Enhanced Wired Controller for Xbox Series X|S",
+        "description": "Thousands of color combinations with hundreds of vivid colors and three distinct Spectra zones, two led modes: select either “breathing” or “solid” modes",
+        "imageUrl": "https://m.media-amazon.com/images/I/71XhN3d9GoL._AC_SL1500_.jpg",
+        "price": 4996,
+        "color": "black",
+        "category": "video game accessories",
+        "subCategory": "wired controller",
+        "brand": "Xbox",
+        "variant": "PowerA Spectra Infinity",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:45:05.561Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:45:05.561Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7eadcee4ecc0d4e3e3aa"
+        },
+        "name": "Xbox Wireless Controller for Xbox Series X|S",
+        "description": "Experience the modernized design of the Xbox Wireless Controller – pulse Red, featuring Sculpted surfaces and refined geometry for enhanced comfort and effortless control during gameplay",
+        "imageUrl": "https://m.media-amazon.com/images/I/61P9Y9Oo+lL._AC_SL1500_.jpg",
+        "price": 7499,
+        "color": "red",
+        "category": "video game accessories",
+        "subCategory": "wireless controller",
+        "brand": "Xbox",
+        "variant": "",
+        "discountRate": 20,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:45:49.827Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:45:49.827Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7ef5cee4ecc0d4e3e3ab"
+        },
+        "name": "Razer Wolverine V2 Wired Gaming Controller for Xbox Series Xs",
+        "description": "Designed for greater control and precision: the controller’s ergonomics provide a natural grip that ensures agile and accurate button interaction, while the contoured design and non-slip rubber grips allow all-day gaming at peak performance",
+        "imageUrl": "https://m.media-amazon.com/images/I/815N9CYHr6L._AC_SL1500_.jpg",
+        "price": 13999,
+        "color": "black",
+        "category": "video game accessories",
+        "subCategory": "wired controller",
+        "brand": "Xbox",
+        "variant": "razer wolverine v2",
+        "discountRate": 37,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            ""
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:47:01.934Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:47:01.934Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7f6ecee4ecc0d4e3e3ac"
+        },
+        "name": "AceGamer Wireless Controller for PS4",
+        "description": "It's compatible with PS4/Pro/Slim/Windows PC. When you are connecting it to console for the first time, you need to use the charge cable in the package.",
+        "imageUrl": "https://m.media-amazon.com/images/I/71vGA8dRecL._AC_SL1500_.jpg",
+        "price": 2999,
+        "color": "purple",
+        "category": "video game accessories",
+        "subCategory": "wireless controller",
+        "brand": "AceGamer",
+        "variant": "",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            "PlayStation",
+            "playstation"
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:49:02.607Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:49:02.607Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7fb2cee4ecc0d4e3e3ad"
+        },
+        "name": "Game Controller for PS4, Wireless Remote",
+        "description": "Game Controller for PS4, Wireless Remote for Play 4 with Dual Vibration Game Joystick",
+        "imageUrl": "https://m.media-amazon.com/images/I/61FH4aOS+FL._AC_SL1495_.jpg",
+        "price": 3199,
+        "color": "blue",
+        "category": "video game accessories",
+        "subCategory": "wireless controller",
+        "brand": "Burcica",
+        "variant": "",
+        "discountRate": 13,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            "PlayStation",
+            "playstation"
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:50:10.541Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:50:10.541Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "64dc7ff0cee4ecc0d4e3e3ae"
+        },
+        "name": "AceGamer [Upgraded] Wireless Controller for PS4",
+        "description": "This wireless controller is compatible with PS4/Slim/Pro/PC (Windows 7/8.1/10). It can be used as a wired controller by connecting it to a computer with a USB cable. It also applies to the latest system software version.(Please activate device with USB cable for the first match connection.)",
+        "imageUrl": "https://m.media-amazon.com/images/I/7156vvzpI-L._AC_SL1500_.jpg",
+        "price": 2999,
+        "color": "camo grey",
+        "category": "video game accessories",
+        "subCategory": "wireless controller",
+        "brand": "AceGamer",
+        "variant": "",
+        "discountRate": 0,
+        "stock": 30,
+        "ratings": 0,
+        "tags": [
+            "PlayStation",
+            "playstation"
+        ],
+        "createdAt": {
+            "$date": "2023-08-16T07:51:12.644Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-16T07:51:12.644Z"
+        }
+    }
+]
