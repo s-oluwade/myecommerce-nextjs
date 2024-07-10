@@ -1,7 +1,7 @@
 import FormSubmitButton from '@/components/FormSubmitButton';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import { authOptions } from '../../../api/auth/[...nextauth]/route';
+// import { authOptions } from '../../../api/auth/[...nextauth]/route';
 import CategoryFields from './CategoryFields';
 import { addProduct } from './actions';
 import {getCategories, getProducts} from '../../../(root)/actions';
@@ -12,11 +12,11 @@ export const metadata = {
 
 export default async function AddProductPage() {
     
-    const session = await getServerSession(authOptions);
+    // const session = await getServerSession(authOptions);
 
-    if (!session) {
-        redirect('/api/auth/signin?callbackUrl=/');
-    }
+    // if (!session) {
+    //     redirect('/api/auth/signin?callbackUrl=/');
+    // }
 
     return (
         <div className='mx-auto max-w-lg'>

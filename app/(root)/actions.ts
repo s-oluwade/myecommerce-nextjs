@@ -4,7 +4,7 @@ import { prisma } from '@/lib/db/prisma';
 import { getServerSession } from 'next-auth';
 import { notFound, redirect } from 'next/navigation';
 import { cache } from 'react';
-import { authOptions } from '../api/auth/[...nextauth]/route';
+// import { authOptions } from '../api/auth/[...nextauth]/route';
 
 export const getProducts = cache(async () => {
     const products = await prisma.product.findMany();
@@ -13,11 +13,11 @@ export const getProducts = cache(async () => {
 });
 
 export async function getCategories() {
-    const session = await getServerSession(authOptions);
+    // const session = await getServerSession(authOptions);
 
-    if (!session) {
-        redirect('/api/auth/signin?callbackUrl=/');
-    }
+    // if (!session) {
+    //     redirect('/api/auth/signin?callbackUrl=/');
+    // }
 
     const products = await getProducts();
     const categories = new Map<string, number>();
@@ -35,11 +35,11 @@ export async function getCategories() {
 }
 
 export async function getSubCategories(category: string) {
-    const session = await getServerSession(authOptions);
+    // const session = await getServerSession(authOptions);
 
-    if (!session) {
-        redirect('/api/auth/signin?callbackUrl=/');
-    }
+    // if (!session) {
+    //     redirect('/api/auth/signin?callbackUrl=/');
+    // }
 
     const products = await getProducts();
     const subCategories = new Map<string, number>();
@@ -73,11 +73,11 @@ export async function getSubCategories(category: string) {
 }
 
 export async function getBrands(category: string) {
-    const session = await getServerSession(authOptions);
+    // const session = await getServerSession(authOptions);
 
-    if (!session) {
-        redirect('/api/auth/signin?callbackUrl=/');
-    }
+    // if (!session) {
+    //     redirect('/api/auth/signin?callbackUrl=/');
+    // }
 
     const products = await getProducts();
     const brands = new Map<string, number>();

@@ -94,3 +94,24 @@ We can create an Ubuntu server either in a default VPC or a custom VPC. I prefer
         ./mongorestore --ssl --host your-docdb-cluster.endpoint.amazonaws.com:27017 --sslCAFile global-bundle.pem --username <username> --password <password> --db ecommerce --collection products mongo_out/ecommerce/products.bson
     ```
 
+# Errors
+## Error Number 1
+- error PrismaClientInitializationError: 
+Invalid `prisma.product.count()` invocation:
+
+
+Raw query failed. Code: `unknown`. Message: `Server selection timeout: No available servers. Topology: { Type: ReplicaSetNoPrimary, Servers: [ { Address: docdb-2024-06-22-18-10-56.cluster-cb0ioc4y41ca.us-east-1.docdb.amazonaws.com:27017, Type: Unknown, Error: No such file or directory (os error 2) }, ] }`
+    at async Home (page.tsx:32:26)
+- error PrismaClientInitializationError: 
+Invalid `prisma.product.count()` invocation:
+
+
+Raw query failed. Code: `unknown`. Message: `Server selection timeout: No available servers. Topology: { Type: ReplicaSetNoPrimary, Servers: [ { Address: docdb-2024-06-22-18-10-56.cluster-cb0ioc4y41ca.us-east-1.docdb.amazonaws.com:27017, Type: Unknown, Error: No such file or directory (os error 2) }, ] }`
+    at async Home (page.tsx:32:26)
+- error PrismaClientInitializationError: 
+Invalid `prisma.product.count()` invocation:
+
+
+Raw query failed. Code: `unknown`. Message: `Server selection timeout: No available servers. Topology: { Type: ReplicaSetNoPrimary, Servers: [ { Address: docdb-2024-06-22-18-10-56.cluster-cb0ioc4y41ca.us-east-1.docdb.amazonaws.com:27017, Type: Unknown, Error: No such file or directory (os error 2) }, ] }`
+    at async Home (page.tsx:32:26)
+digest: "1780671499"
